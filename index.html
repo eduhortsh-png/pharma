@@ -608,14 +608,145 @@ CTA
 FOOTER
 ================================================== */
 
+/* ==================================================
+FOOTER PREMIUM
+================================================== */
+
 footer{
-    padding:55px 8%;
+
+    padding:80px 8% 35px;
+
+    margin-top:60px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1.4fr
+    1fr
+    1fr;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+}
+
+.footer-column h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    color:#FAF8F2;
+
+}
+
+.footer-column h4{
+
+    font-size:15px;
+
+    margin-bottom:20px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    color:#FAF8F2;
+
+}
+
+.footer-column p{
+
+    color:rgba(255,255,255,0.62);
+
+    line-height:2;
+
+    font-size:14px;
+
+}
+
+/* ==================================================
+LINK FOOTER
+================================================== */
+
+.footer-link{
+
+    color:rgba(255,255,255,0.62);
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+.footer-link:visited{
+
+    color:rgba(255,255,255,0.62);
+
+}
+
+.footer-link:hover{
+
+    color:#FAF8F2;
+
+}
+
+/* ==================================================
+BOTTOM
+================================================== */
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:30px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.06);
 
     text-align:center;
 
-    color:rgba(255,255,255,0.58);
+    color:rgba(255,255,255,0.45);
 
-    font-size:14px;
+    font-size:13px;
+
+    letter-spacing:0.5px;
+
+}
+
+/* ==================================================
+RESPONSIVO
+================================================== */
+
+@media(max-width:950px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:40px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
 
 /* ==================================================
@@ -940,9 +1071,75 @@ CTA
 FOOTER
 ================================================== -->
 
+<!-- ==================================================
+FOOTER
+================================================== -->
+
 <footer>
 
-    © 2026 Integrative Pharma — Todos os direitos reservados.
+    <div class="footer-grid">
+
+        <div class="footer-column">
+
+            <h3>
+                Integrative Pharma
+            </h3>
+
+            <p>
+                Onde ciência e sofisticação se unem em um cuidado integral.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>
+                Informações
+            </h4>
+
+            <p>
+                CNPJ: 22.545.530/0001-58
+            </p>
+
+            <p>
+                Curitiba — Paraná
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h4>
+                Endereço
+            </h4>
+
+            <p>
+                <a href="https://share.google/bYq77sYfB6V8Rgztd"
+                target="_blank"
+                class="footer-link">
+
+                    Avenida Nossa Senhora da Penha, 41
+
+                </a>
+            </p>
+
+            <p>
+                Bairro Cristo Rei
+            </p>
+
+            <p>
+                CEP 80050-550
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Integrative Pharma — Todos os direitos reservados.
+
+    </div>
 
 </footer>
 
